@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage - joybasket</title>
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+
 </head>
 <body>
-    <h1>Welcome to joybasket</h1>
+    <h1 style="text-align: center; color: blueviolet;">Welcome to joybasket</h1>
+<a href="{% url 'contacts'%}"> contacts</a>
+<a href="{% url 'about'%}"> about</a>
+
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates consectetur rerum, nobis nihil iste molestias. Tenetur esse illo sit ab corrupti! Sint accusamus, dolorum non reprehenderit quod id sed deserunt.
 Atque quidem officiis labore repellat, maxime quasi alias aliquam minus a sit, incidunt aut totam, ipsum fugit porro unde deserunt asperiores quis in hic cupiditate veritatis distinctio accusantium. Cumque, tempora.</p>
 
+<img src="{% static 'images/fre.png' %}" alt="">
 </body>
 </html>
